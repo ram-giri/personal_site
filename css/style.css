@@ -131,6 +131,7 @@ header .navbar ul li a:hover{
 
 /* Home Section CSS Start*/
 .home .about{
+    margin-top: 4rem;
     align-items: center;
     display: flex;
     justify-content: center;
