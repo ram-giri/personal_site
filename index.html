@@ -2,65 +2,141 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ram Giri | Official Site</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
-  </link>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ram Giri</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
-  <div class="header">
-    <div class="logo">
-      <h1>Ram Giri</h1>
-      <h5>Personal Site</h5>
-    </div>
-    <div class="adv">
-      <img src="assets/WELCOME.jpg" alt="" />
-    </div>
-  </div>
 
-  <nav class="navigation h-nav-resp" id="navbar">
-    <ul class="menu-item v-class-resp">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="">Tech News</a></li>
-      <li><a href="">Blog</a></li>
-      <li><a href="">Contact Us</a></li>
-    </ul>
-    <div class="right-nav v-class-resp">
-      <input type="text" name="search" id="search" />
-      <button class="btn btn-sm">Search</button>
-    </div>
-    <div class="burger">
-      <div class="line"></div>
-      <div class="line"></div>
-      <div class="line"></div>
-    </div>
-  </nav>
-  <div class="slider"></div>
+    <!-- header section starts  -->
+    <header>
+        <div class="user">
+            <h3 class="name">RAM GIRI</h3>
+            <p class="post">Dart & Flutter Developer</p>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">home</a></li>
+                <li><a href="#portfolio">portfolio</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- header section ends -->
 
-  <br>
+    <div id="menu" class="fas fa-bars"></div>
 
-  <div class="text-center">
-    <div class="image">
-      <img src="assets/ram.jpg">
-    </div>
-    <p class="name" style="font-size: 30px;">Ram Giri</p>
-    <p>Flutter Developer</p>
-    <div class="social-icon">
-      <a href="https://facebook.com/ramlauruk" target="_blank"><i class="fab fa-facebook"></i></a>
-      <a href="https://github.com/ram-giri" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://youtube.com/channel/UCL8AtU8ZJD_wlYkQBSn5v2g" target="_blank"><i class="fab fa-youtube"></i></a>
-      <a href="https://www.linkedin.com/in/ram-giri-865220192" target="_blank"><i class="fab fa-linkedin"></i></a>
-    </div>
-  </div>
+    <!-- home section starts  -->
+    <section class="home" id="home">
+        <div class="about">
+            <div class="details">
+                <h4>Flutter Developer</h4>
+                <h3>Hi, I am <span>Ram Giri</span></h3>
+                <p>Dart and Flutter Developer
+                </p>
+                <a><button class="btn">HIRE ME</button></a>
+            </div>
+
+            <div class="pic">
+                <img src="images/ram.jpg" alt="Profile Picture">
+                <div class="social-icon">
+                    <a href="https://facebook.com/ramlauruk" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://github.com/ram-giri" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://youtube.com/channel/UCL8AtU8ZJD_wlYkQBSn5v2g" target="_blank"><i
+                            class="fab fa-youtube"></i></a>
+                    <a href="https://www.linkedin.com/in/ram-giri-865220192" target="_blank"><i
+                            class="fab fa-linkedin"></i></a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- home section ends -->
+
+    <!-- portfolio section starts  -->
+    <section class="portfolio" id="portfolio">
+
+        <h1 class="heading"> my <span>portfolio</span> </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <a href="https://play.google.com/store/apps/details?id=np.com.ramgiri.driving_test">
+                    <img src="images/applogo.jpg" alt=""></a>
+            </div>
+
+            <!-- <div class="box">
+                    <img src="images/2.jpg" alt="">
+                </div> -->
+        </div>
+
+    </section>
+
+    <!-- portfolio section ends -->
+
+    <!-- contact section starts  -->
+
+    <section class="contact" id="contact">
+
+        <h1 class="heading"> <span>contact</span> me </h1>
+
+        <div class="row">
+
+            <div class="content">
+
+                <h3 class="title">contact info</h3>
+
+                <div class="info">
+                    <h3 class="lower"> <i class="fas fa-envelope"></i>ramlauruk1@gmail.com </h3>
+                    <h3> <i class="fas fa-phone"></i> +977-9802827909 </h3>
+                    <h3> <i class="fas fa-map-marker-alt"></i> Pokhara-24, Nepal </h3>
+                </div>
+
+            </div>
+
+            <form id="contactMessage" action="" method="POST">
+
+                <input type="text" name="name" placeholder="name" class="box" id="name" required>
+                <input type="email" name="email" placeholder="email" class="box" id="email" required>
+                <textarea name="message" id="" cols="30" rows="10" class="box message" placeholder="message"
+                    itemid="message" required></textarea>
+                <button type="submit" class="btn" onclick="sumitForm()"> send <i class="fas fa-paper-plane"></i>
+                </button>
+                <span id="success"></span>
+
+            </form>
+
+        </div>
+    </section>
+
+    <!-- contact section ends -->
 
 
-  <script src="main.js"></script>
+    <!-- scroll top button  -->
+
+    <a href="#home" class="top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- jquery cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+
+
 </body>
 <nav class="fotter">
-  <a href="#">2022 &copy; Ram Giri </a>
+    <a href="#">2023 &copy; Ram Giri </a>
 </nav>
+
 </html>
